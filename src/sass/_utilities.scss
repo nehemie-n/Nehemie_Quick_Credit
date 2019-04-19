@@ -1,0 +1,203 @@
+@import "./variables";
+
+// 
+// aligment
+// 
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.righted {
+    margin-left: auto;
+}
+
+.lefted {
+    margin-right: auto;
+}
+
+// 
+// text aligments
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+// 
+// font weights
+// 
+.font {
+    &-light {
+        font-weight: 300;
+    }
+
+    &-normal {
+        font-weight: 500;
+    }
+
+    &-bold {
+        font-weight: 700;
+    }
+}
+
+// 
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {}
+
+// 
+// colors
+// 
+
+// 
+// Mixin to create text colors
+// like text-primary
+// 
+@mixin initiate-colors {
+
+    @each $name,
+    $value in $colors {
+        .text-#{$name} {
+            color: $value;
+        }
+    }
+}
+
+@include initiate-colors;
+
+// 
+// Mixin to create background colors
+// 
+@mixin initiate-colors {
+
+    @each $name,
+    $value in $colors {
+        .bg-#{$name} {
+            background: $value;
+        }
+    }
+}
+
+@include initiate-colors;
+
+// 
+// font sizes
+// like font-12
+
+$fonts: 10;
+
+@mixin initiate-fonts {
+    @for $value from 1 through $fonts {
+
+        // create fonts
+        .font-#{$value} {
+            font-size: #{$value}rem;
+        }
+    }
+}
+
+@include initiate-fonts;
+
+// 
+// setting 
+// paddings
+// 
+$paddings: 10;
+
+@mixin initiate-paddings {
+    @for $value from 1 through $paddings {
+
+        // create paddings
+        .p#{$value} {
+            padding: #{$value}0px;
+        }
+
+        .pl-#{$value} {
+            padding-left: #{$value}0px;
+        }
+
+        .pr-#{$value} {
+            padding-right: #{$value}0px;
+        }
+
+        .pt-#{$value} {
+            padding-top: #{$value}0px;
+        }
+
+        .pb-#{$value} {
+            padding-bottom: #{$value}0px;
+        }
+    }
+}
+
+@include initiate-paddings;
+
+
+// 
+// setting 
+// paddings
+// 
+$margin: 10;
+
+@mixin initiate-margin {
+    @for $value from 1 through $margin {
+
+        // create margin
+        .m#{$value} {
+            margin: #{$value}0px;
+        }
+
+        .ml-#{$value} {
+            margin-left: #{$value}0px;
+        }
+
+        .mr-#{$value} {
+            margin-right: #{$value}0px;
+        }
+
+        .mt-#{$value} {
+            margin-top: #{$value}0px;
+        }
+
+        .mb-#{$value} {
+            margin-bottom: #{$value}0px;
+        }
+    }
+}
+
+@include initiate-margin;
+
+
+
+// 
+// Dividers
+// 
+.divider {
+    color: $placeholder;
+    text-align: center;
+    font-weight: bold;
+}
+
+// 
+// 
+// 
+// Display properties

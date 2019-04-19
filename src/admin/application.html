@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homepage</title>
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/3.6.95/css/materialdesignicons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/index.css">
+    <link rel="stylesheet" href="./../css/front.css">
+    <!--  -->
+</head>
+
+<body id="user_index">
+    <div>
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!-- top nav -->
+        <div class="top-nav">
+            <div class="top-nav--wrapper">
+                <div class="logo-h">
+                    <img class="logo" src="./../assets/logo.svg" alt="Quick Credit">
+                </div>
+                <div class="top-nav--right">
+                    <form action="">
+                        <div id="search-h" class="input-h">
+                            <input id="search" name="search" placeholder="search" type="search">
+                            <span class="mdi mdi-magnify"></span>
+                        </div>
+                    </form>
+                    <button class="btn btn-log">Logout</button>
+                </div>
+            </div>
+            <div class="top-nav--replacer">
+            </div>
+        </div>
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!-- All user pages extend this page's schema  -->
+        <main id="page-wrapper">
+            <!--  -->
+            <!--  -->
+            <!-- HOlds Left aside element -->
+            <aside id="page-wrapper-left">
+                <div id="aside-menu">
+                    <!--  -->
+                    <!-- Account info -->
+                    <div id="aside-account">
+                        <div class="aside-prof">
+                            <img src="./../assets/kelvin-zyteng-764486-unsplash.jpg" alt="">
+                            <div class="aside-prof-details">
+                                <span class="aside-prof-name">John Doe</span>
+                                <span class="aside-prof-id">#3940340345</span>
+                                <span class="aside-prof-status text-success">Verified</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <!-- aside Menu -->
+                    <div id="aside-menu-h">
+                        <ul>
+                            <li class="link-h">
+                                <a class="link" href="">
+                                    <span class="mdi mdi-plus"></span>
+                                    <span>Apply loan</span>
+                                </a>
+                            </li>
+                            <li class="link-h">
+                                <a class="link active" href="">
+                                    <span class="mdi mdi-currency-usd"></span>
+                                    <span>Loans</span>
+                                </a>
+                            </li>
+                            <li class="link-h">
+                                <a class="link" href="">
+                                    <span class="mdi mdi-chart-line-variant"></span>
+                                    <span>paid</span>
+                                </a>
+                            </li>
+                            <li class="link-h">
+                                <a class="link" href="">
+                                    <span class="mdi mdi-chart-line-variant mdi-flip-v"></span>
+                                    <span>current</span>
+                                </a>
+                            </li>
+                            <li class="link-h">
+                                <a class="link" href="">
+                                    <span class="mdi mdi-account"></span>
+                                    <span>approved</span>
+                                </a>
+                            </li>
+                            <li class="link-h">
+                                <a class="link" href="">
+                                    <span class="mdi mdi-account"></span>
+                                    <span>Rejected</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--  -->
+                    <!--  -->
+                    <div id="img-h">
+                        <img src="./../assets/undraw_savings_hjfl.svg" alt="">
+                    </div>
+                    <!--  -->
+                    <!--  -->
+                </div>
+            </aside>
+            <!--  -->
+            <!--  -->
+            <!-- HOlds right aside element -->
+            <div id="page-wrapper-right">
+                <div class="row">
+                    <!-- contents go in here -->
+                    <!--  -->
+                    <div class="column column-12 column-lg-7">
+                        <form autocomplete="off" name="apply" class="card apply-loan">
+                            <div class="card-title">
+                                Apply for a loan
+                            </div>
+                            <div class="inputs-h">
+                                <!--  -->
+                                <div class="input-h">
+                                    <label for="amount">
+                                        <span class="mdi mdi-currency-usd"></span>
+                                        Amount in numbers
+                                    </label>
+                                    <input id="amount" name="Amount" placeholder="Amount in numbers" type="number">
+                                </div>
+                                <!--  -->
+                                <div class="input-h">
+                                    <label for="interest_rate">
+                                        <span class="mdi mdi-number"></span>
+                                        Interest rate (unchangeable)
+                                    </label>
+                                    <input id="interest_rate" name="interest" value="8" placeholder="Interest rate"
+                                        type="number" disabled>
+                                </div>
+                                <!--  -->
+                                <div class="input-h apply-loan-agree">
+                                    <label for="aggree">
+                                        <input id="aggree" name="aggree" type="checkbox">
+                                        <span>
+                                            I agree to the interest rate, and that I will be punished If I don't meet
+                                            payment deadlines.
+                                        </span>
+                                    </label>
+                                </div>
+                                <!--  -->
+                            </div>
+                            <div class="submit-h">
+                                <button class="btn btn-dark">APPLY</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <!--  -->
+        </main>
+
+        <!--  -->
+    </div>
+</body>
+
+</html>

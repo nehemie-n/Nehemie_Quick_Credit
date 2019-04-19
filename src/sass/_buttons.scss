@@ -1,0 +1,43 @@
+@import "./variables";
+
+// Mixin to create buttons
+@mixin initiate-buttons {
+    @each $name,
+    $value in $colors {
+
+        // create buttons
+        .btn-#{$name} {
+            background: $value;
+            color:  map-get($colors-color, $name);;
+            border: 1px solid #{$value};
+
+            &:active,
+            &:hover {
+                background: darken($value, 10%);
+            }
+        }
+    }
+}
+
+// buttons initiate
+.btn {
+    cursor: pointer;
+    padding: 0.6rem 2rem;
+    vertical-align: middle;
+    outline: none;
+    transition: 300ms ease;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:not(.btn-radial) {
+        border-radius: 0.2rem;
+    }
+
+    &-radial {
+        border-radius: 10rem;
+    }
+}
+
+@include initiate-buttons;

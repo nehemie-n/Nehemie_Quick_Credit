@@ -1,0 +1,254 @@
+@import "./variables";
+// 
+// bootstrap other 
+// scss files
+
+@import "./grids";
+@import "./buttons";
+@import "./utilities";
+@import "./cards";
+@import "./inputs";
+// include font
+
+// body setup
+* {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    color: $black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9rem;
+    background: #F3F8F8;
+}
+
+// 
+// shared top nav
+// 
+.top-nav {
+    &--wrapper {
+        position: fixed;
+        display: block;
+        z-index: 1000;
+        background: white;
+        display: flex;
+        padding: 0.3rem 2rem;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        left: 0px;
+        top: 0px;
+        min-height: 40px;
+        filter: drop-shadow(0px 0px 30px rgba(27, 33, 48, 0.1));
+    }
+
+    &--replacer {
+        min-height: 50px;
+        display: block;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    &--right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        #search-h {
+            position: relative;
+            border: 1px solid $black;
+            border-radius: 10rem;
+            transition: 300ms ease all;
+            display: flex;
+
+            &:focus-within {
+                background: lighten($primary, 30%);
+
+                input {
+                    margin-right: 50px;
+                }
+            }
+
+            .mdi {
+                margin-right: 1rem;
+                font-size: 16px;
+                color: $primary;
+            }
+
+            input {
+                padding: 0.7rem 1rem;
+                border: 0px;
+                border-radius: 10rem;
+                background: transparent;
+                transition: 300ms ease;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        .btn-log {
+            background: lighten($red, 50%);
+            color: $red;
+            border-width: 0px;
+            border-radius: 10rem;
+            margin-left: 10px;
+
+            &:hover {
+                background: lighten($red, 40%);
+            }
+        }
+    }
+}
+
+// 
+// 
+// 
+// Main page schema
+// 
+// page wrapper
+#page-wrapper {
+
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+
+
+    &-left {
+        position: fixed;
+        left: 0px;
+        // compared to top menu
+        top: calc(50px + 10px);
+        width: calc((100% / 5) - 20px);
+        // compared to top
+        height: calc(100vh - 50px + 10px);
+        background: white;
+        box-shadow: 0px 0px 8px rgba(27, 33, 48, 0.05);
+
+    }
+
+    &-right {
+        padding: 20px 2rem 2rem 2rem;
+        width: calc(100% - (100% / 5) - 20px);
+
+        .column {
+            padding: 2rem 0.5rem;
+        }
+
+        .card {
+            min-height: 400px;
+            width: 100%;
+            // spacing
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+    }
+}
+
+// 
+// 
+// Main Aside Menu
+// 
+#aside-menu {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+
+    .aside-prof {
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        background: whitesmoke;
+
+
+        &-details {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+        }
+
+        &-name {
+            font-weight: bold;
+            font-size: 1rem;
+            padding-bottom: 0.1rem;
+        }
+
+        &-id,
+        &-status {
+            font-weight: lighter;
+            font-size: 0.8rem;
+        }
+
+        img {
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+        }
+    }
+
+    #aside-account {
+        min-height: 10vh;
+    }
+
+    #aside-menu-h {
+        width: 100%;
+    }
+
+    #img-h {
+        width: 100%;
+        text-align: center;
+
+        img {
+            width: 90%;
+            opacity: 0.5;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0px;
+    }
+
+    .link-h {
+        display: block;
+        padding-right: 2rem;
+        padding-left: 1rem;
+    }
+
+    .link {
+        padding: 0.8rem 1rem;
+        border-radius: 20rem;
+        display: block;
+        text-decoration: none;
+        color: $black;
+        transition: 300ms ease background;
+
+        .mdi {
+            font-weight: bold;
+
+        }
+
+        .mdi:before,
+        .mdi-set {
+            font-weight: 800;
+        }
+
+        &:hover {
+            background: lighten($primary, 30%)
+        }
+
+        &.active {
+            color: $primary;
+            background: lighten($primary, 30%)
+        }
+    }
+}

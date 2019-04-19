@@ -1,0 +1,45 @@
+@import "./variables";
+
+.inputs-h {
+    padding: 1rem;
+    padding-top: 0px;
+
+    .input-h {
+        padding: 0.5rem 1rem;
+
+        .mdi {
+            color: darken($primary, 10%);
+            font-size: 16px;
+        }
+
+        label {
+            color: $black;
+            font-weight: 600 !important;
+            display: block;
+            font-size: 0.9rem;
+        }
+
+        input,
+        textarea {
+            padding: 0.8rem 1rem;
+            display: block;
+            outline: none;
+            border-radius: 0.1rem;
+            border: 1px solid rgba($black, 0.5);
+            transition: 300ms ease;
+            display: block;
+            width: 100%;
+
+            &:focus {
+                border-color: $primary;
+                background: $primary-l;
+            }
+        }
+    }
+}
+
+
+.submit-h {
+    text-align: center;
+    padding-bottom: 1rem;
+}
