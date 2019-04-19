@@ -1,0 +1,231 @@
+@import "./variables";
+
+// 
+// index page
+#index {
+    .back-h {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        background-image: url('./../assets/kelvin-zyteng-764486-unsplash.jpg');
+        background-size: cover;
+    }
+
+    #back-ov {
+        background: rgba($color: $black, $alpha: .6);
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+
+        .form-holders {
+            >* {
+                display: block;
+            }
+        }
+
+        .card {
+            min-height: 30vh;
+            width: 100%;
+            display: block;
+        }
+
+        h1 {
+            margin: 0px;
+            padding: 0px;
+
+            h1.name {}
+        }
+
+        .column:not(.form-holder) {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .column.form-holder {
+            .card {
+                margin-bottom: 1rem;
+                margin-top: 1rem;
+
+                &-title {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+// 
+// Loan
+// card
+// 
+
+.loan {
+    padding: 1rem 2rem 0rem 2rem;
+    position: relative;
+
+    &-approval {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        border-bottom-right-radius: 15px;
+        padding: 0.4rem;
+        padding-right: 0.6rem;
+        font-size: 0.7rem;
+
+        &.status-danger {
+            color: $red;
+            background: rgba($red, .1)
+        }
+
+        &.status-success {
+            color: $success;
+            background: rgba($success, .1)
+        }
+    }
+
+    &-title {
+        color: $primary;
+
+        * {
+            font-weight: 300;
+        }
+    }
+
+    &-dates {
+        padding: 1rem 0px;
+    }
+
+    .dates-expl {
+        margin-left: 1rem;
+    }
+
+    &-tags {
+        padding: 0.5rem 1rem;
+        display: block;
+        text-align: center;
+
+        &-ele {
+            display: inline-block;
+            margin: 5px;
+            background: rgba($darkblue, 0.1);
+            color: $darkblue;
+            font-size: 0.7rem;
+            padding: 0.4rem 1rem;
+            border-radius: 30rem;
+        }
+    }
+
+    &-footer {
+        color: $darkblue;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+
+        &-ele {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+
+            .money {
+                margin-left: 5px;
+                padding: 5px;
+            }
+        }
+    }
+
+    &-p-history {
+        margin-top: 2rem;
+
+        h1,
+        p {
+            margin: 0px;
+        }
+    }
+
+    &-p-graph {
+        margin: 1rem 0px;
+    }
+
+    &-d-history {
+        margin: 2rem 0rem;
+        padding: 0rem 2rem;
+
+        &-ele {
+            padding: 1rem 0px;
+            border-bottom: 1px solid rgba($darkblue, .3);
+            display: flex;
+            flex-direction: row;
+
+            .left {
+                width: 150px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                background: rgba($primary, .3);
+                padding: 1rem 1rem;
+                border-radius: 0.2rem;
+
+                .paid {
+                    padding: 1rem 0px;
+                }
+
+                h1 {
+                    margin: 0px;
+                }
+            }
+
+            .right {
+                padding: 1rem;
+
+                .main-id {
+                    font-weight: 400;
+                    margin: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+// 
+// 
+// 
+// Apply for a loan
+// Loan
+.apply-loan {
+    min-height: 75vh !important;
+
+    .card-title {
+        text-align: center;
+        padding-top: 2rem;
+    }
+
+    .input-h {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+    }
+
+    &-agree {
+        label {
+            display: flex !important;
+            flex-direction: row !important;
+            font-size: 1rem !important;
+            flex-wrap: nowrap;
+
+            input {
+                margin-right: 1rem;
+                width: unset !important;
+            }
+
+            span {
+                width: 100%;
+
+            }
+        }
+    }
+}

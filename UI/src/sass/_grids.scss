@@ -1,0 +1,77 @@
+@import "./variables";
+
+// 
+// this grid system is hihly inspired by that one of bootstrap
+// 
+@mixin initiate-columns {
+    @for $i from 4 through $columns-nbr {
+        @media (min-width: 992px) {
+            .column-lg-#{$i} {
+                width: percentage($i/$columns-nbr)!important;
+                max-width: percentage($i/$columns-nbr)!important;
+            }
+        }
+
+        .column-#{$i} {
+            width: percentage($i/$columns-nbr);
+            max-width: percentage($i/$columns-nbr);
+        }
+
+    }
+}
+
+.column {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+// initiate columns
+@include initiate-columns;
+
+
+// row
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+// wrapper
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// 
+// Extra small devices (portrait phones, less than 576px)
+@media (min-width: 576px) {
+    .wrapper {
+        max-width: 550px;
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (min-width: 768) {
+    .wrapper {
+        max-width: 750px;
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (min-width: 992px) {
+    .wrapper {
+        max-width: 970px;
+    }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (min-width: 1200px) {
+    .wrapper {
+        max-width: 1170px;
+    }
+}

@@ -1,0 +1,44 @@
+// color
+// variables
+// 
+
+// main
+$green:         #52E3B8;
+$red:           #C92052;
+$yellow:        #FFC107;
+$black:         #1B2130;
+// extra
+$darkblue:      #05386B;
+$grey :         #E7E8EA;
+$placeholder:   #D0D1D4;
+// other colors
+$border-color:  #DFEAF5;
+
+$primary:         $green;
+$primary-l:       #DBF9F0;
+$success:          $green;
+// colors mapped
+$colors: (
+    primary:    $green,
+    secondary:  $darkblue,
+    light:      $grey,
+    warning:    $yellow,
+    danger:     $red,
+    success:    $green,
+    dark:       $black
+);
+
+$colors-color: (
+    primary:    $black,
+    secondary:  $success,
+    light:      $black,
+    warning:    $black,
+    danger:     $placeholder,
+    success:    $black,
+    dark:       $success
+);
+
+// 
+// 
+// Columns
+$columns-nbr:   12;
