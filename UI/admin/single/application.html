@@ -9,8 +9,9 @@
     <!-- fonts -->
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/3.6.95/css/materialdesignicons.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="./../css/index.css">
-    <link rel="stylesheet" href="./../css/front.css">
+    <link rel="stylesheet" href="./../../css/index.css">
+    <link rel="stylesheet" href="./../../css/front.css">
+    <link rel="stylesheet" href="./../../css/admin.css">
     <!--  -->
 </head>
 
@@ -23,19 +24,16 @@
         <div class="top-nav">
             <div class="top-nav--wrapper">
                 <div class="logo-h">
-                    <img class="logo" src="./../assets/logo.svg" alt="Quick Credit">
+                    <img class="logo" src="./../../assets/logo.svg" alt="Quick Credit">
                 </div>
-              <div class="top-nav--right">
+                <div class="top-nav--right">
                     <form action="">
                         <div id="search-h" class="input-h">
                             <input id="search" name="search" placeholder="search" type="search">
                             <span class="mdi mdi-magnify"></span>
                         </div>
                     </form>
-                    <button class="btn btn-menu" id="side-menu-toogler">
-                        <span class="mdi mdi-menu"></span>
-                    </button>
-                    <a href="./../index.html" class="btn btn-log">Logout</a>
+                    <a href="./../../index.html" class="btn btn-log">Logout</a>
                 </div>
             </div>
             <div class="top-nav--replacer">
@@ -55,7 +53,7 @@
                     <!-- Account info -->
                     <div id="aside-account">
                         <div class="aside-prof">
-                            <img src="./../assets/kelvin-zyteng-764486-unsplash.jpg" alt="">
+                            <img src="./../../assets/kelvin-zyteng-764486-unsplash.jpg" alt="">
                             <div class="aside-prof-details">
                                 <span class="aside-prof-name">John Doe</span>
                                 <span class="aside-prof-id">#3940340345</span>
@@ -68,35 +66,36 @@
                     <div id="aside-menu-h">
                         <ul>
                             <li class="link-h">
-                                <a class="link" href="./apply.html">
+                                <a class="link active" href="./../applications.html">
                                     <span class="mdi mdi-plus"></span>
-                                    <span>Apply loan</span>
+                                    <span>Applications</span>
                                 </a>
                             </li>
                             <li class="link-h">
-                                <a class="link active" href="./index.html">
-                                    <span class="mdi mdi-currency-usd"></span>
-                                    <span>Loans</span>
+                                <a class="link" href="./../clients.html">
+                                    <span class="mdi mdi-account-multiple"></span>
+                                    <span>clients</span>
                                 </a>
                             </li>
                             <li class="link-h">
-                                <a class="link" href="./paid.html">
+                                <a class="link" href="./../repaidloans.html">
                                     <span class="mdi mdi-chart-line-variant"></span>
-                                    <span>paid</span>
+                                    <span>Repaid</span>
                                 </a>
                             </li>
                             <li class="link-h">
-                                <a class="link" href="./current.html">
+                                <a class="link" href="./../currentloans.html">
                                     <span class="mdi mdi-chart-line-variant mdi-flip-v"></span>
                                     <span>current</span>
                                 </a>
                             </li>
+
                         </ul>
                     </div>
                     <!--  -->
                     <!--  -->
                     <div id="img-h">
-                        <img src="./../assets/undraw_savings_hjfl.svg" alt="">
+                        <img src="./../../assets/undraw_savings_hjfl.svg" alt="">
                     </div>
                     <!--  -->
                     <!--  -->
@@ -105,39 +104,51 @@
             <!--  -->
             <!--  -->
             <!-- HOlds right aside element -->
-            <div id="page-wrapper-right">
+            <div id="page-wrapper-right" class="loan-application-wrapper">
                 <div class="row">
                     <!-- contents go in here -->
                     <!--  -->
+                    <div class="row">
+                        <div class="column column-12 column-lg-6">
+                            <div class="client-element client-header">
+                                <div id="client-header-h">
+                                    <div class="client-header-prof">
+                                        <img src="./../../assets/kelvin-zyteng-764486-unsplash.jpg" alt="">
+                                        <div class="client-header-details">
+                                            <a class="font-bold">John Doe</a>
+                                            <span class="id">#3940340345</span>
+                                            <span class="status text-success">Verified</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
                     <div class="column column-12 column-lg-6">
-                        <div class="card loan">
+                        <div class="card application">
                             <!--  -->
-                            <div class="loan-approval status-success">
-                                Approved
+                            <div class="loan-approval status-danger">
+                                Not Approved
                             </div>
                             <!--  -->
-                            <div class="loan-title">
-                                <h1>${loan title}</h1>
-                            </div>
+                            <a class="loan-title">
+                                <h1>${application title}</h1>
+                            </a>
                             <!--  -->
-                            <div class="loan-body">
+                            <div class="application-body">
                                 <div> with <b>${8%}</b> Interest rate.</div>
                                 <div> In <b>${3}</b> installments.</div>
                                 <div class="loan-dates">
                                     <div>
                                         <span class="text-primary mdi mdi-clock"></span>
                                         <span>12 July 2018</span>
-                                        <b class="text-secondary dates-expl">Date Borrowed</b>
-                                    </div>
-                                    <div>
-                                        <span class="text-primary mdi mdi-clock-end"></span>
-                                        <span>17 July 2018</span>
-                                        <b class="text-secondary dates-expl">Due</b>
+                                        <b class="text-secondary dates-expl"> Application Date</b>
                                     </div>
                                 </div>
                                 <p>
-                                    We help solve problems of financial inclusion as a way to alleviate poverty and
-                                    empower low income earners. We help solve problems of financial inclusion as a way
+                                    Short cut description application application description. of financial inclusion as
+                                    a way
                                     to alleviate poverty and empower low income earners. We help solve problems of
                                     financial inclusion as a way to alleviate poverty and empower low income earners.
                                 </p>
@@ -161,12 +172,14 @@
                                     <h1 class="money">$300</h1>
                                 </div>
                                 <div class="loan-footer-ele">
-                                    <span>Balance</span>
-                                    <h1 class="money">$500</h1>
+                                   <button class="btn btn-success">Approve</button>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!--  -->
+                    <!--  -->
+                    <!--  -->
                 </div>
             </div>
             <!--  -->

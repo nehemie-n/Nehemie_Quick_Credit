@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="./../css/index.css">
     <link rel="stylesheet" href="./../css/front.css">
+    <link rel="stylesheet" href="./../css/admin.css">
     <!--  -->
 </head>
 
@@ -25,14 +26,17 @@
                 <div class="logo-h">
                     <img class="logo" src="./../assets/logo.svg" alt="Quick Credit">
                 </div>
-                <div class="top-nav--right">
+              <div class="top-nav--right">
                     <form action="">
                         <div id="search-h" class="input-h">
                             <input id="search" name="search" placeholder="search" type="search">
                             <span class="mdi mdi-magnify"></span>
                         </div>
                     </form>
-                    <button class="btn btn-log">Logout</button>
+                    <button class="btn btn-menu" id="side-menu-toogler">
+                        <span class="mdi mdi-menu"></span>
+                    </button>
+                    <a href="./../index.html" class="btn btn-log">Logout</a>
                 </div>
             </div>
             <div class="top-nav--replacer">
@@ -65,41 +69,30 @@
                     <div id="aside-menu-h">
                         <ul>
                             <li class="link-h">
-                                <a class="link" href="">
+                                <a class="link" href="./applications.html">
                                     <span class="mdi mdi-plus"></span>
-                                    <span>Apply loan</span>
+                                    <span>Applications</span>
                                 </a>
                             </li>
                             <li class="link-h">
-                                <a class="link active" href="">
-                                    <span class="mdi mdi-currency-usd"></span>
-                                    <span>Loans</span>
+                                <a class="link active" href="./clients.html">
+                                    <span class="mdi mdi-account-multiple"></span>
+                                    <span>clients</span>
                                 </a>
                             </li>
                             <li class="link-h">
-                                <a class="link" href="">
+                                <a class="link" href="./repaidloans.html">
                                     <span class="mdi mdi-chart-line-variant"></span>
-                                    <span>paid</span>
+                                    <span>Repaid</span>
                                 </a>
                             </li>
                             <li class="link-h">
-                                <a class="link" href="">
+                                <a class="link" href="./currentloans.html">
                                     <span class="mdi mdi-chart-line-variant mdi-flip-v"></span>
                                     <span>current</span>
                                 </a>
                             </li>
-                            <li class="link-h">
-                                <a class="link" href="">
-                                    <span class="mdi mdi-account"></span>
-                                    <span>approved</span>
-                                </a>
-                            </li>
-                            <li class="link-h">
-                                <a class="link" href="">
-                                    <span class="mdi mdi-account"></span>
-                                    <span>Rejected</span>
-                                </a>
-                            </li>
+
                         </ul>
                     </div>
                     <!--  -->
@@ -118,54 +111,111 @@
                 <div class="row">
                     <!-- contents go in here -->
                     <!--  -->
-                    <div class="column column-12 column-lg-7">
-                        <form autocomplete="off" name="apply" class="card apply-loan">
-                            <div class="card-title">
-                                Apply for a loan
-                            </div>
-                            <div class="inputs-h">
-                                <!--  -->
-                                <div class="input-h">
-                                    <label for="amount">
-                                        <span class="mdi mdi-currency-usd"></span>
-                                        Amount in numbers
-                                    </label>
-                                    <input id="amount" name="Amount" placeholder="Amount in numbers" type="number">
+                    <div class="column column-12 column-lg-6">
+                        <div class="client">
+                            <!--  -->
+                            <!--  -->
+                            <div class="client-element client-header">
+                                <div id="client-header-h">
+                                    <div class="client-header-prof">
+                                        <img src="./../assets/kelvin-zyteng-764486-unsplash.jpg" alt="">
+                                        <div class="client-header-details">
+                                            <a class="font-bold">John Doe</a>
+                                            <span class="id">#3940340345</span>
+                                            <span class="status text-success">Verified</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <!--  -->
-                                <div class="input-h">
-                                    <label for="interest_rate">
-                                        <span class="mdi mdi-number"></span>
-                                        Interest rate (unchangeable)
-                                    </label>
-                                    <input id="interest_rate" name="interest" value="8" placeholder="Interest rate"
-                                        type="number" disabled>
-                                </div>
-                                <!--  -->
-                                <div class="input-h apply-loan-agree">
-                                    <label for="aggree">
-                                        <input id="aggree" name="aggree" type="checkbox">
-                                        <span>
-                                            I agree to the interest rate, and that I will be punished If I don't meet
-                                            payment deadlines.
-                                        </span>
-                                    </label>
-                                </div>
-                                <!--  -->
                             </div>
-                            <div class="submit-h">
-                                <button class="btn btn-dark">APPLY</button>
+                            <!--  -->
+                            <!--  -->
+                            <div class="client-element client-body">
+                                <div class="client-dates">
+                                    <div>
+                                        <span class="text-primary mdi mdi-clock"></span>
+                                        <span>12 July 2018</span>
+                                        <b class="text-secondary dates-expl">Joined</b>
+                                    </div>
+                                </div>
+                                <p>
+                                    Client about We help solve problems of financial inclusion as a way to alleviate
+                                    poverty and
+                                    empower low income earners. We help solve problems of financial inclusion as a way
+                                    to alleviate poverty.
+                                </p>
                             </div>
-                        </form>
+                            <!--  -->
+                            <div class="client-element loan-footer">
+                                <div class="loan-footer-ele">
+                                    <span>Amount due</span>
+                                    <h1 class="money">$300</h1>
+                                </div>
+                                <div class="loan-footer-ele">
+                                    <button class="btn btn-danger">Unverify</button>
+                                </div>
+                            </div>
+                            <!--  -->
+                        </div>
                     </div>
+                    <!--  -->
+                    <!--  -->
+                    <div class="column column-12 column-lg-6">
+                        <div class="client">
+                            <!--  -->
+                            <!--  -->
+                            <div class="client-element client-header">
+                                <div id="client-header-h">
+                                    <div class="client-header-prof">
+                                        <img src="./../assets/kelvin-zyteng-764486-unsplash.jpg" alt="">
+                                        <div class="client-header-details">
+                                            <a class="font-bold">Jane Doe</a>
+                                            <span class="id">#3940340345</span>
+                                            <span class="status text-danger">Unverified</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <!--  -->
+                            <div class="client-element client-body">
+                                <div class="client-dates">
+                                    <div>
+                                        <span class="text-primary mdi mdi-clock"></span>
+                                        <span>12 July 2018</span>
+                                        <b class="text-secondary dates-expl">Joined</b>
+                                    </div>
+                                </div>
+                                <p>
+                                    Client about We help solve problems of financial inclusion as a way to alleviate
+                                    poverty and
+                                    empower low income earners. We help solve problems of financial inclusion as a way
+                                    to alleviate poverty.
+                                </p>
+                            </div>
+                            <!--  -->
+                            <div class="client-element loan-footer">
+                                <div class="loan-footer-ele">
+                                    <span>Amount due</span>
+                                    <h1 class="money">$120</h1>
+                                </div>
+                                <div class="loan-footer-ele">
+                                    <button class="btn btn-dark">Verify</button>
+                                </div>
+                            </div>
+                            <!--  -->
+                        </div>
+                    </div>
+                    <!--  -->
+                    <!--  -->
                 </div>
             </div>
             <!--  -->
             <!--  -->
-        </main>
+</main>
 
         <!--  -->
     </div>
+    <script src="./../js/main.js"></script>
 </body>
 
 </html>

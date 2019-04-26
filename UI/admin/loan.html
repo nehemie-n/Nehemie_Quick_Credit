@@ -25,14 +25,17 @@
                 <div class="logo-h">
                     <img class="logo" src="./../assets/logo.svg" alt="Quick Credit">
                 </div>
-                <div class="top-nav--right">
+              <div class="top-nav--right">
                     <form action="">
                         <div id="search-h" class="input-h">
                             <input id="search" name="search" placeholder="search" type="search">
                             <span class="mdi mdi-magnify"></span>
                         </div>
                     </form>
-                    <button class="btn btn-log">Logout</button>
+                    <button class="btn btn-menu" id="side-menu-toogler">
+                        <span class="mdi mdi-menu"></span>
+                    </button>
+                    <a href="./../index.html" class="btn btn-log">Logout</a>
                 </div>
             </div>
             <div class="top-nav--replacer">
@@ -65,41 +68,30 @@
                     <div id="aside-menu-h">
                         <ul>
                             <li class="link-h">
-                                <a class="link" href="">
+                                <a class="link" href="./applications.html">
                                     <span class="mdi mdi-plus"></span>
-                                    <span>Apply loan</span>
+                                    <span>Applications</span>
                                 </a>
                             </li>
                             <li class="link-h">
-                                <a class="link active" href="">
-                                    <span class="mdi mdi-currency-usd"></span>
-                                    <span>Loans</span>
+                                <a class="link" href="./clients.html">
+                                    <span class="mdi mdi-account-multiple"></span>
+                                    <span>clients</span>
                                 </a>
                             </li>
                             <li class="link-h">
-                                <a class="link" href="">
+                                <a class="link" href="./repaidloans.html">
                                     <span class="mdi mdi-chart-line-variant"></span>
-                                    <span>paid</span>
+                                    <span>Repaid</span>
                                 </a>
                             </li>
                             <li class="link-h">
-                                <a class="link" href="">
+                                <a class="link" href="./currentloans.html">
                                     <span class="mdi mdi-chart-line-variant mdi-flip-v"></span>
                                     <span>current</span>
                                 </a>
                             </li>
-                            <li class="link-h">
-                                <a class="link" href="">
-                                    <span class="mdi mdi-account"></span>
-                                    <span>approved</span>
-                                </a>
-                            </li>
-                            <li class="link-h">
-                                <a class="link" href="">
-                                    <span class="mdi mdi-account"></span>
-                                    <span>Rejected</span>
-                                </a>
-                            </li>
+
                         </ul>
                     </div>
                     <!--  -->
@@ -236,10 +228,11 @@
             </div>
             <!--  -->
             <!--  -->
-        </main>
+</main>
 
         <!--  -->
     </div>
+    <script src="./../js/main.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,12 @@
 @import "./variables";
 
+.btn-menu{
+    background: white;
+    color: $black;
+    border: 0px;
+    padding: 0px 2rem!important;
+    font-size: 30px;
+}
 // Mixin to create buttons
 @mixin initiate-buttons {
     @each $name,
