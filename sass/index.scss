@@ -61,6 +61,13 @@ body {
         justify-content: space-between;
         align-items: center;
 
+        // hide the form on small devices
+        @media (max-width: 768px) {
+            form {
+                display: none;
+            }
+        }
+
         #search-h {
             position: relative;
             border: 1px solid $black;
@@ -140,7 +147,7 @@ body {
     @media (max-width: 768px) {
         &-left {
             transition: 300ms ease transform;
-            width: 400px !important;
+            width: 250px !important;
 
             &:not(.show) {
                 transform: translateX(-100%) !important;
