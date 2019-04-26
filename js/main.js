@@ -41,7 +41,7 @@ class ApiCaller {
      * 
      * @param {*} address 
      */
-    GET(address) {
+    GET() {
         this._http.setRequestHeader('Content-type', 'application/json');
         this._http.open("GET", (this._apiAddress + this._address));
         this._http.send();
@@ -63,6 +63,16 @@ class ApiCaller {
     POST(data) {
         this._http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
         this._http.open("POST", (this._apiAddress + this._address));
+        this._http.send(data);
+        this.respondToUser();
+    }
+    /**
+     * 
+     * @param {*} address 
+     */
+    PUT(data) {
+        this._http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        this._http.open("PUT", (this._apiAddress + this._address));
         this._http.send(data);
         this.respondToUser();
     }
@@ -88,5 +98,5 @@ class ApiCaller {
 // 
 // Models to call
 class User{
-    
+
 }
