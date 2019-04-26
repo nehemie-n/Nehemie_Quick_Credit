@@ -2,6 +2,7 @@
 
 // 
 // index page
+// The one for login and signup
 #index {
     .back-h {
         position: fixed;
@@ -91,12 +92,16 @@
         color: $primary;
 
         * {
+            color: $primary;
             font-weight: 300;
         }
     }
 
     &-dates {
         padding: 1rem 0px;
+        >*{
+            padding: 0.4rem 10px 0px 10px;
+        }
     }
 
     .dates-expl {

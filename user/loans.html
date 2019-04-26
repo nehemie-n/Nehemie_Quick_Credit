@@ -25,14 +25,17 @@
                 <div class="logo-h">
                     <img class="logo" src="./../assets/logo.svg" alt="Quick Credit">
                 </div>
-                <div class="top-nav--right">
+              <div class="top-nav--right">
                     <form action="">
                         <div id="search-h" class="input-h">
                             <input id="search" name="search" placeholder="search" type="search">
                             <span class="mdi mdi-magnify"></span>
                         </div>
                     </form>
-                    <button class="btn btn-log">Logout</button>
+                    <button class="btn btn-menu" id="side-menu-toogler">
+                        <span class="mdi mdi-menu"></span>
+                    </button>
+                    <a href="./../index.html" class="btn btn-log">Logout</a>
                 </div>
             </div>
             <div class="top-nav--replacer">
@@ -65,30 +68,30 @@
                     <div id="aside-menu-h">
                         <ul>
                             <li class="link-h">
-                                <a class="link" href="">
+                                <a class="link" href="./apply.html">
                                     <span class="mdi mdi-plus"></span>
                                     <span>Apply loan</span>
                                 </a>
                             </li>
                             <li class="link-h">
-                                <a class="link active" href="">
+                                <a class="link active" href="./loans.html">
                                     <span class="mdi mdi-currency-usd"></span>
                                     <span>Loans</span>
                                 </a>
                             </li>
                             <li class="link-h">
-                                <a class="link" href="">
+                                <a class="link" href="./loans.html">
                                     <span class="mdi mdi-chart-line-variant"></span>
                                     <span>paid</span>
                                 </a>
                             </li>
                             <li class="link-h">
-                                <a class="link" href="">
+                                <a class="link" href="./loan.html">
                                     <span class="mdi mdi-chart-line-variant mdi-flip-v"></span>
                                     <span>current</span>
                                 </a>
                             </li>
-                            <li class="link-h">
+                            <!-- <li class="link-h">
                                 <a class="link" href="">
                                     <span class="mdi mdi-account"></span>
                                     <span>approved</span>
@@ -99,7 +102,7 @@
                                     <span class="mdi mdi-account"></span>
                                     <span>Rejected</span>
                                 </a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                     <!--  -->
@@ -125,9 +128,9 @@
                                 Approved
                             </div>
                             <!--  -->
-                            <div class="loan-title">
+                            <a href="./loan.html" class="loan-title">
                                 <h1>${loan title}</h1>
-                            </div>
+                            </a>
                             <!--  -->
                             <div class="loan-body">
                                 <div> with <b>${8%}</b> Interest rate.</div>
@@ -176,14 +179,77 @@
                             </div>
                         </div>
                     </div>
+                    <!--  -->
+                    <!--  -->
+                    <div class="column column-12 column-lg-6">
+                        <div class="card loan">
+                            <!--  -->
+                            <div class="loan-approval status-success">
+                                Approved
+                            </div>
+                            <!--  -->
+                            <a href="./loan.html" class="loan-title">
+                                <h1>${loan title}</h1>
+                            </a>
+                            <!--  -->
+                            <div class="loan-body">
+                                <div> with <b>${8%}</b> Interest rate.</div>
+                                <div> In <b>${3}</b> installments.</div>
+                                <div class="loan-dates">
+                                    <div>
+                                        <span class="text-primary mdi mdi-clock"></span>
+                                        <span>12 July 2018</span>
+                                        <b class="text-secondary dates-expl">Date Borrowed</b>
+                                    </div>
+                                    <div>
+                                        <span class="text-primary mdi mdi-clock-end"></span>
+                                        <span>17 July 2018</span>
+                                        <b class="text-secondary dates-expl">Due</b>
+                                    </div>
+                                </div>
+                                <p>
+                                    We help solve problems of financial inclusion as a way to alleviate poverty and
+                                    empower low income earners. We help solve problems of financial inclusion as a way
+                                    to alleviate poverty and empower low income earners. We help solve problems of
+                                    financial inclusion as a way to alleviate poverty and empower low income earners.
+                                </p>
+                            </div>
+                            <!--  -->
+                            <div class="loan-tags">
+                                <div class="loan-tags-ele">
+                                    #school
+                                </div>
+                                <div class="loan-tags-ele">
+                                    #2019
+                                </div>
+                                <div class="loan-tags-ele">
+                                    #Hey
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div class="loan-footer">
+                                <div class="loan-footer-ele">
+                                    <span>Amount</span>
+                                    <h1 class="money">$300</h1>
+                                </div>
+                                <div class="loan-footer-ele">
+                                    <span>Balance</span>
+                                    <h1 class="money">$500</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <!--  -->
                 </div>
             </div>
             <!--  -->
             <!--  -->
-        </main>
+</main>
 
         <!--  -->
     </div>
+    <script src="./../js/main.js"></script>
 </body>
 
 </html>

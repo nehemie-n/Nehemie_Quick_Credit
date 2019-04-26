@@ -25,14 +25,17 @@
                 <div class="logo-h">
                     <img class="logo" src="./../assets/logo.svg" alt="Quick Credit">
                 </div>
-                <div class="top-nav--right">
+              <div class="top-nav--right">
                     <form action="">
                         <div id="search-h" class="input-h">
                             <input id="search" name="search" placeholder="search" type="search">
                             <span class="mdi mdi-magnify"></span>
                         </div>
                     </form>
-                    <button class="btn btn-log">Logout</button>
+                    <button class="btn btn-menu" id="side-menu-toogler">
+                        <span class="mdi mdi-menu"></span>
+                    </button>
+                    <a href="./../index.html" class="btn btn-log">Logout</a>
                 </div>
             </div>
             <div class="top-nav--replacer">
@@ -65,39 +68,27 @@
                     <div id="aside-menu-h">
                         <ul>
                             <li class="link-h">
-                                <a class="link" href="">
+                                <a class="link active" href="./apply.html">
                                     <span class="mdi mdi-plus"></span>
                                     <span>Apply loan</span>
                                 </a>
                             </li>
                             <li class="link-h">
-                                <a class="link active" href="">
+                                <a class="link" href="./index.html">
                                     <span class="mdi mdi-currency-usd"></span>
                                     <span>Loans</span>
                                 </a>
                             </li>
                             <li class="link-h">
-                                <a class="link" href="">
+                                <a class="link" href="./paid.html">
                                     <span class="mdi mdi-chart-line-variant"></span>
                                     <span>paid</span>
                                 </a>
                             </li>
                             <li class="link-h">
-                                <a class="link" href="">
+                                <a class="link" href="./current.html">
                                     <span class="mdi mdi-chart-line-variant mdi-flip-v"></span>
                                     <span>current</span>
-                                </a>
-                            </li>
-                            <li class="link-h">
-                                <a class="link" href="">
-                                    <span class="mdi mdi-account"></span>
-                                    <span>approved</span>
-                                </a>
-                            </li>
-                            <li class="link-h">
-                                <a class="link" href="">
-                                    <span class="mdi mdi-account"></span>
-                                    <span>Rejected</span>
                                 </a>
                             </li>
                         </ul>
@@ -126,6 +117,14 @@
                             <div class="inputs-h">
                                 <!--  -->
                                 <div class="input-h">
+                                    <label for="title">
+                                        <span class="mdi mdi-currency-usd"></span>
+                                        Title
+                                    </label>
+                                    <input id="title" name="title" placeholder="Short title" type="text">
+                                </div>
+                                <!--  -->
+                                <div class="input-h">
                                     <label for="amount">
                                         <span class="mdi mdi-currency-usd"></span>
                                         Amount in numbers
@@ -140,6 +139,14 @@
                                     </label>
                                     <input id="interest_rate" name="interest" value="8" placeholder="Interest rate"
                                         type="number" disabled>
+                                </div>
+                                <!--  -->
+                                <div class="input-h">
+                                    <label for="description">
+                                        <span class="mdi mdi-text"></span>
+                                        Short description
+                                    </label>
+                                    <textarea rows="8" id="description" name="description" value="8" placeholder="Short description"></textarea>
                                 </div>
                                 <!--  -->
                                 <div class="input-h apply-loan-agree">
@@ -162,10 +169,11 @@
             </div>
             <!--  -->
             <!--  -->
-        </main>
+</main>
 
         <!--  -->
     </div>
+    <script src="./../js/main.js"></script>
 </body>
 
 </html>

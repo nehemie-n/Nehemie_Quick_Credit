@@ -1,0 +1,139 @@
+#index .back-h {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background-image: url("./../assets/kelvin-zyteng-764486-unsplash.jpg");
+  background-size: cover; }
+#index #back-ov {
+  background: rgba(27, 33, 48, 0.6);
+  min-height: 100vh;
+  width: 100%;
+  position: relative; }
+  #index #back-ov .form-holders > * {
+    display: block; }
+  #index #back-ov .card {
+    min-height: 30vh;
+    width: 100%;
+    display: block; }
+  #index #back-ov h1 {
+    margin: 0px;
+    padding: 0px; }
+  #index #back-ov .column:not(.form-holder) {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  #index #back-ov .column.form-holder .card {
+    margin-bottom: 1rem;
+    margin-top: 1rem; }
+    #index #back-ov .column.form-holder .card-title {
+      text-align: center; }
+
+.loan {
+  padding: 1rem 2rem 0rem 2rem;
+  position: relative; }
+  .loan-approval {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-bottom-right-radius: 15px;
+    padding: 0.4rem;
+    padding-right: 0.6rem;
+    font-size: 0.7rem; }
+    .loan-approval.status-danger {
+      color: #C92052;
+      background: rgba(201, 32, 82, 0.1); }
+    .loan-approval.status-success {
+      color: #52E3B8;
+      background: rgba(82, 227, 184, 0.1); }
+  .loan-title {
+    color: #52E3B8; }
+    .loan-title * {
+      color: #52E3B8;
+      font-weight: 300; }
+  .loan-dates {
+    padding: 1rem 0px; }
+    .loan-dates > * {
+      padding: 0.4rem 10px 0px 10px; }
+  .loan .dates-expl {
+    margin-left: 1rem; }
+  .loan-tags {
+    padding: 0.5rem 1rem;
+    display: block;
+    text-align: center; }
+    .loan-tags-ele {
+      display: inline-block;
+      margin: 5px;
+      background: rgba(5, 56, 107, 0.1);
+      color: #05386B;
+      font-size: 0.7rem;
+      padding: 0.4rem 1rem;
+      border-radius: 30rem; }
+  .loan-footer {
+    color: #05386B;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center; }
+    .loan-footer-ele {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center; }
+      .loan-footer-ele .money {
+        margin-left: 5px;
+        padding: 5px; }
+  .loan-p-history {
+    margin-top: 2rem; }
+    .loan-p-history h1,
+    .loan-p-history p {
+      margin: 0px; }
+  .loan-p-graph {
+    margin: 1rem 0px; }
+  .loan-d-history {
+    margin: 2rem 0rem;
+    padding: 0rem 2rem; }
+    .loan-d-history-ele {
+      padding: 1rem 0px;
+      border-bottom: 1px solid rgba(5, 56, 107, 0.3);
+      display: flex;
+      flex-direction: row; }
+      .loan-d-history-ele .left {
+        width: 150px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        background: rgba(82, 227, 184, 0.3);
+        padding: 1rem 1rem;
+        border-radius: 0.2rem; }
+        .loan-d-history-ele .left .paid {
+          padding: 1rem 0px; }
+        .loan-d-history-ele .left h1 {
+          margin: 0px; }
+      .loan-d-history-ele .right {
+        padding: 1rem; }
+        .loan-d-history-ele .right .main-id {
+          font-weight: 400;
+          margin: 0.5rem; }
+
+.apply-loan {
+  min-height: 75vh !important; }
+  .apply-loan .card-title {
+    text-align: center;
+    padding-top: 2rem; }
+  .apply-loan .input-h {
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
+  .apply-loan-agree label {
+    display: flex !important;
+    flex-direction: row !important;
+    font-size: 1rem !important;
+    flex-wrap: nowrap; }
+    .apply-loan-agree label input {
+      margin-right: 1rem;
+      width: unset !important; }
+    .apply-loan-agree label span {
+      width: 100%; }
+
+/*# sourceMappingURL=front.css.map */
