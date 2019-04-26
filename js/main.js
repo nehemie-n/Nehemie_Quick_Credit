@@ -34,7 +34,7 @@ class ApiCaller {
     /**
      * Constructor
      */
-    constructor(address){
+    constructor(address) {
         this._address = address;
     }
     /**
@@ -47,7 +47,7 @@ class ApiCaller {
         this._http.send();
         this.respondToUser();
     }
-      /**
+    /**
      * 
      * @param {*} address 
      */
@@ -91,12 +91,4 @@ class ApiCaller {
             }
         });
     }
-}
-
-
-// 
-// 
-// Models to call
-class User{
-
 }
