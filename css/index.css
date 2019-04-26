@@ -634,8 +634,6 @@ a {
   text-decoration: none;
   color: unset;
   transition: 300ms ease; }
-  a:active, a:visited {
-    color: unset; }
   a:hover {
     opacity: 0.7; }
 
