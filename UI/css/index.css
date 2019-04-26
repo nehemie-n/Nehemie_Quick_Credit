@@ -674,6 +674,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media (max-width: 768px) {
+    .top-nav--right form {
+      display: none; } }
   .top-nav--right #search-h {
     position: relative;
     border: 1px solid #1B2130;
@@ -722,7 +725,7 @@ body {
   @media (max-width: 768px) {
     #page-wrapper-left {
       transition: 300ms ease transform;
-      width: 400px !important; }
+      width: 250px !important; }
       #page-wrapper-left:not(.show) {
         transform: translateX(-100%) !important; }
       #page-wrapper-left.show {
